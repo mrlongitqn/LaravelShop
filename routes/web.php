@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/admin/dashboard', [\App\Http\Controllers\DashboardController::class,'index'])->name('dashboard');
+Route::get('/admin/login', [\App\Http\Controllers\DashboardController::class,'Login'])->name('login');
+Route::post('/admin/login', [\App\Http\Controllers\DashboardController::class,'PostLogin'])->name('post-login');
