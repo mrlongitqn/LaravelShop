@@ -10,16 +10,7 @@ use Illuminate\Support\Facades\Hash;
 class DashboardController extends Controller
 {
     function index(){
-//        $user = new User();
-//        $user->firstname = 'Long';
-//        $user->lastname = 'Nguyen';
-//        $user->dob = '1992-11-18';
-//        $user->phone = '09621121020';
-//        $user->email = 'ndlong@sdc.udn.vn';
-//        $user->group_id = 0;
-//        $user->password = Hash::make('123456');
-//        $user->save();
-        return view();
+        return view('admin.dashboard.index');
     }
 
     function Login(){
